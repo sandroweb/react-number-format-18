@@ -14,12 +14,12 @@ export interface NumberFormatValues {
 }
 
 export enum SourceType {
-  Event = 'event';
-  Props= 'props';
+  event = 'event',
+  props = 'prop',
 }
 
 export interface SourceInfo {
-  event: SyntheticEvent;
+  event?: SyntheticEvent;
   source: SourceType;
 }
 
